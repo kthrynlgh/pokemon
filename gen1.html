@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokémon Generation 1</title>
+    <link rel="stylesheet" href="pages.css">
 </head>
 <body>
-    <div data-layer="Pages" class="Pages" style="width: 1440px; height: 1024px; position: relative; background: white; overflow: hidden">
-        <div data-layer="Pokémon" class="PokMon" style="left: 64px; top: 69.75px; position: absolute; color: black; font-size: 128px; font-family: Jomhuria; font-weight: 400; word-wrap: break-word">Pokémon</div>
-        <div data-layer="Generation 1" class="Generation1" style="left: 64px; top: 173.75px; position: absolute; color: black; font-size: 32px; font-family: Krona One; font-weight: 400; word-wrap: break-word">Generation 1</div>
-        <div data-layer="Info about generation 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur" class="InfoAboutGeneration1LoremIpsumDolorSitAmetConsectetuerAdipiscingElitAeneanCommodoLigulaEgetDolorAeneanMassaCumSociisNatoquePenatibusEtMagnisDisParturientMontesNascetur" style="width: 979px; left: 64px; top: 225.75px; position: absolute; color: black; font-size: 24px; font-family: Lato; font-weight: 400; word-wrap: break-word">Info about generation 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur </div>
-  
-        <div data-layer="card" data-property-1="back" class="Card" style="width: 313px; height: 438px; left: 64px; top: 387px; position: absolute; background: #011A91; border-radius: 16px">
-            <div data-layer="Rectangle 1" class="Rectangle1" style="width: 150px; height: 150px; left: 81.50px; top: 144px; position: absolute; background: #D9D9D9; border-radius: 100px"></div>
-        </div>
-        <div data-layer="card" data-property-1="back" class="Card" style="width: 313px; height: 438px; left: 400px; top: 387px; position: absolute; background: #011A91; border-radius: 16px">
-            <div data-layer="Rectangle 1" class="Rectangle1" style="width: 150px; height: 150px; left: 81.50px; top: 144px; position: absolute; background: #D9D9D9; border-radius: 100px"></div>
-        </div>
-        <div data-layer="card" data-property-1="back" class="Card" style="width: 313px; height: 438px; left: 736px; top: 387px; position: absolute; background: #011A91; border-radius: 16px">
-            <div data-layer="Rectangle 1" class="Rectangle1" style="width: 150px; height: 150px; left: 81.50px; top: 144px; position: absolute; background: #D9D9D9; border-radius: 100px"></div>
-        </div>
-  
-        <div data-layer="main page generation splash" data-property-1="Default" class="MainPageGenerationSplash" style="width: 377px; height: 1024px; left: 1063px; top: 0px; position: absolute; background: white; border-left: 1px solid black; overflow: hidden">
-            <img data-layer="Rectangle 2" class="Rectangle2" style="width: 377px; height: 341px; left: 0px; top: 0px; position: absolute;" src="https://i.imgur.com/uTj7i9D.png" />
-            <img data-layer="Rectangle 3" class="Rectangle3" style="width: 377px; height: 341px; left: 0px; top: 341px; position: absolute;" src="https://i.imgur.com/gK9J63r.png" />
-            <img data-layer="Rectangle 4" class="Rectangle4" style="width: 377px; height: 341px; left: 0px; top: 682px; position: absolute;" src="https://i.imgur.com/4K9xT5h.png" />
+
+<div class="pages-container">
+    <div class="main-content-area">
+        <h1 class="pokemon-title">Pokémon</h1>
+        <h2 class="generation-title">Generation 1</h2>
+        <p class="info-text">
+            Info about generation 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+        </p>
+    
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-circle"></div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-circle"></div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-circle"></div>
+            </div>
         </div>
     </div>
+    
+    <!-- Right image panel -->
+    <div class="splash-panel">
+        <img class="splash-image" src="https://i.imgur.com/uTj7i9D.png" alt="Bulbasaur">
+        <img class="splash-image" src="https://i.imgur.com/gK9J63r.png" alt="Charmander">
+        <img class="splash-image" src="https://i.imgur.com/4K9xT5h.png" alt="Squirtle">
+    </div>
+</div>
+
 </body>
 </html>
