@@ -13,8 +13,9 @@ body {
 .pages-container {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: calc(100vh - 54px);
     background: white;
+    margin-top: 54px;
 }
 
 /* Main content area: handles the text and card sections */
@@ -30,18 +31,18 @@ body {
 }
 
 .main-content-area h1 {
-    margin-top: 12pt;
+    margin-top: -44pt;
     margin-bottom: 0;
 }
 
 .main-content-area h2 {
-    margin-top: -84pt;
+    margin-top: -88pt;
     margin-bottom: -4pt;
 }
 
 .main-content-area p {
-    margin-top: -48pt;
-    margin-bottom: -44pt;
+    margin-top: -56pt;
+    margin-bottom: -56pt;
 }
 
 .pokemon-title {
@@ -71,12 +72,11 @@ body {
     line-height: 1.2;
 }
 
-/* Card container: uses Flexbox to wrap and space the cards */
 .card-container {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 1.5vw;
     margin-top: 0;
@@ -85,17 +85,61 @@ body {
 .card {
     width: 20vw;
     height: 28vw;
-    background: #011A91;
+    background: transparent;
     border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-inner {
+    transform: rotateY(0deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+}
+
+.card-front {
+    background-color: #bbb;
+    color: black;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    background-color: #011A91;
+    color: white;
+    transform: rotateY(180deg);
 }
 
 .back-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 16px;
+}
+
+.front-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10pt solid silver;
     border-radius: 16px;
 }
 
@@ -115,11 +159,48 @@ body {
 .splash-image {
     width: 125%;
     height: auto;
-    margin: 8px 0;
+    margin: 2% 0;
     object-fit: cover;
     transform: rotate(-15deg);
     transform-origin: center;
+    transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
+
+.main-content-area:hover ~ .splash-panel .splash-image,
+.splash-panel:hover .splash-image {
+    opacity: 0.2;
+    filter: brightness(0.2);
+}
+
+#bulbasaur-card:hover ~ .splash-panel #bulbasaur-splash {
+    opacity: 1;
+    filter: none;
+}
+
+#bulbasaur-splash:hover {
+    opacity: 1;
+    filter: none;
+}
+
+/* .splash-panel:hover .splash-image {
+    opacity: 0.2;
+    filter: brightness(0.2);
+}
+
+.card-container:hover ~ .splash-panel .splash-image {
+    opacity: 0.2;
+    filter: brightness(0.2);
+}
+
+#bulbasaur-card:hover ~ .splash-panel #bulbasaur-splash {
+    opacity: 1;
+    filter: none;
+}
+
+#bulbasaur-splash:hover, #bulbasaur-card:hover {
+    opacity: 1;
+    filter: none;
+} */
 
 .navbar {
     z-index: 2;
