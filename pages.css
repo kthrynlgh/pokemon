@@ -29,7 +29,21 @@ body {
     justify-content: space-around;
 }
 
-/* Text styles are adjusted for a static layout */
+.main-content-area h1 {
+    margin-top: 12pt;
+    margin-bottom: 0;
+}
+
+.main-content-area h2 {
+    margin-top: -84pt;
+    margin-bottom: -4pt;
+}
+
+.main-content-area p {
+    margin-top: -48pt;
+    margin-bottom: -44pt;
+}
+
 .pokemon-title {
     color: black;
     font-size: 8vw;
@@ -54,14 +68,16 @@ body {
     font-size: 20px;
     font-weight: 400;
     margin-top: 0.5rem;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 /* Card container: uses Flexbox to wrap and space the cards */
 .card-container {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 1.5vw;
     margin-top: 0;
 }
