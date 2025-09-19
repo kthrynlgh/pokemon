@@ -5,13 +5,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    overflow: hidden; /* Prevents scrolling */
 }
 
 /* Main container: Flexbox handles the two main sections (text/cards and images) */
 .pages-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh; /* Set height to 100% of viewport height */
     background: white;
 }
 
@@ -81,6 +82,7 @@ body {
     width: 100%;
     background: white;
     border-top: 1px solid black;
+    overflow: hidden; /* Hide overflowing parts of the rotated images */
 }
 
 .splash-image {
@@ -88,6 +90,8 @@ body {
     height: auto;
     flex: 1;
     object-fit: cover;
+    transform: rotate(-15deg); /* Tilted effect */
+    transform-origin: center;
 }
 
 /* Media query for larger screens (desktops) */
