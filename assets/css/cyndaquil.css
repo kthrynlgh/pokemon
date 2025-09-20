@@ -1,0 +1,117 @@
+body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background: linear-gradient(180deg, rgba(255,255,255,0) 0%, white 100%), url('Pages-click.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Krona One', sans-serif;
+      font-size: 64px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .card {
+      background: transparent;
+      width: 30%;
+      text-align: center;
+    }
+
+    .card h2 {
+      font-family: 'Jomhuria', serif;
+      font-size: 64px;
+      margin: 0;
+    }
+
+    .card .id {
+      font-family: 'Krona One', sans-serif;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card img.pokemon {
+      width: 280px;
+      height: auto;
+      margin: 10px auto;
+    }
+
+    .types {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 10px 0 20px;
+    }
+
+    .type {
+      padding: 8px 30px;
+      border-radius: 10px;
+      color: white;
+      font-weight: 800;
+      font-size: 20px;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .type.fire { background: #FF4422; }
+
+    .moves {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .move {
+    background: #E8E8E8;
+    border-radius: 10px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 4px solid;
+    margin-bottom: 10px;
+    }
+
+    /* Icon */
+    .move .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    }
+
+    .move .name {
+    flex: 1;
+    text-align: left;
+    margin-left: 8px;
+    }
+
+    .move .power {
+    text-align: right;
+    min-width: 40px;
+    }
+
+    .move-icon {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+
+    /* Move type borders */
+    .move.physical { border-color: #AAAA99; }
+    .move.fire { border-color: #FF4422; }
+    .move.ground { border-color: #DDBB55; }
+    .move.psychic { border-color: #FF5599; }
