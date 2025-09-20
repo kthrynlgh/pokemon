@@ -9,7 +9,27 @@ body {
     height: 100vh;
 }
 
-/* Main container: Flexbox handles the two main sections (text/cards and images) */
+.navbar {
+    z-index: 2;
+    background: rgba(4, 21, 35, 0.9) !important;
+    padding: 2pt 60pt;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-family: "Lato", sans-serif;
+    font-size: 10pt;
+    margin: 0 10pt;
+}
+
+#navbarSupportedContent {
+    justify-content: end;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
 .pages-container {
     display: flex;
     flex-direction: row;
@@ -18,7 +38,6 @@ body {
     margin-top: 54px;
 }
 
-/* Main content area: handles the text and card sections */
 .main-content-area {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -166,59 +185,12 @@ body {
     transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
-.main-content-area:hover ~ .splash-panel .splash-image,
-.splash-panel:hover .splash-image {
+.splash-panel .splash-image {
     opacity: 0.2;
-    filter: brightness(0.2);
+    filter: brightness(1.2);
 }
 
-#bulbasaur-card:hover ~ .splash-panel #bulbasaur-splash {
+.splash-image:hover {
     opacity: 1;
-    filter: none;
-}
-
-#bulbasaur-splash:hover {
-    opacity: 1;
-    filter: none;
-}
-
-/* .splash-panel:hover .splash-image {
-    opacity: 0.2;
-    filter: brightness(0.2);
-}
-
-.card-container:hover ~ .splash-panel .splash-image {
-    opacity: 0.2;
-    filter: brightness(0.2);
-}
-
-#bulbasaur-card:hover ~ .splash-panel #bulbasaur-splash {
-    opacity: 1;
-    filter: none;
-}
-
-#bulbasaur-splash:hover, #bulbasaur-card:hover {
-    opacity: 1;
-    filter: none;
-} */
-
-.navbar {
-    z-index: 2;
-    background: rgba(4, 21, 35, 0.9) !important;
-    padding: 2pt 60pt;
-}
-
-.navbar-nav .nav-link {
-    color: #fff !important;
-    font-family: "Lato", sans-serif;
-    font-size: 10pt;
-    margin: 0 10pt;
-}
-
-#navbarSupportedContent {
-    justify-content: end;
-}
-
-.navbar-brand {
-    color: #fff !important;
+    filter: brightness(1);
 }
