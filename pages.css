@@ -52,11 +52,35 @@ body {
 .main-content-area h1 {
     margin-top: -44pt;
     margin-bottom: 0;
+    text-align: left;
 }
 
 .main-content-area h2 {
     margin-top: -88pt;
     margin-bottom: -4pt;
+}
+
+.japanese-name-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: -184pt;
+    text-align: right;
+}
+
+.japanese-name {
+    font-family: 'Krona One', sans-serif;
+    font-size: 96px;
+    color: rgba(0, 0, 0, 0.25);
+    text-align: right;
+}
+
+.english-name {
+    font-family: 'Krona One', sans-serif;
+    font-size: 36px;
+    text-align: right;
+    margin-top: -32px;
+    padding-right: 8pt;
 }
 
 .main-content-area p {
@@ -95,7 +119,7 @@ body {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     gap: 1.5vw;
     margin-top: 0;
@@ -185,12 +209,72 @@ body {
     transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
 }
 
-.splash-panel .splash-image {
-    opacity: 0.2;
-    filter: brightness(1.2);
-}
-
 .splash-image:hover {
     opacity: 1;
     filter: brightness(1);
+}
+
+.card-name-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card:hover .card-name-container {
+    opacity: 1;
+}
+
+.japanese-name {
+    font-family: 'Krona One', sans-serif;
+    font-size: 24pt;
+    padding-right: 10pt;
+    color: white;
+    text-align: right;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.english-name {
+    font-family: 'Krona One', sans-serif;
+    font-size: 14pt;
+    padding-right: 12pt;
+    text-align: right;
+    margin-top: -5px;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.card-description-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 60px;
+    justify-content: last baseline;
+}
+
+.card:hover .card-description-container {
+    opacity: 1;
+}
+
+.card-description {
+    font-size: 10pt;
+    color: #333;
+    text-align: left;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
 }
