@@ -4,41 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon Generation 1</title>
+
+    <link href="vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="pages.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logos/logo2.png" height="40px"  />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<div class="pages-container">
-    <div class="main-content-area">
-        <h1 class="pokemon-title">Pokémon</h1>
-        <h2 class="generation-title">Generation 1</h2>
-        <p class="info-text">
-            Info about generation 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-        </p>
-    
-        <div class="card-container">
-            <!-- Card 1 -->
-            <div class="card">
-                <img class="back-image" src="/images/card-back.jpg" alt="card 1 back">
-            </div>
-            <!-- Card 2 -->
-            <div class="card">
-                <img class="back-image" src="/images/card-back.jpg" alt="card 1 back">
-            </div>
-            <!-- Card 3 -->
-            <div class="card">
-                <img class="back-image" src="/images/card-back.jpg" alt="card 1 back">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <form class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#intro">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#generation1">GENERATION
+                        </a>
+                        </li>
+                    </ul>
+                </form>
             </div>
         </div>
+    </nav>
+
+    <div class="pages-container">
+        <div class="main-content-area">
+            <h1 class="pokemon-title">Kanto Region</h1>
+            <h2 class="generation-title">Generation 1</h2>
+
+            <!-- <div class="japanese-name-container">
+                <div class="japanese-name">フシギダネ</div>
+                <div class="english-name">Bulbasaur</div>
+            </div> -->
+
+            <p class="info-text">
+                Info about generation 1 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+            </p>
+        
+            <div class="card-container">
+                <div class="card" id="bulbasaur-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img class="front-image" src="/images/card-bulbasaur.png" alt="Bulbasaur card">
+                            <div class="card-name-container">
+                                <div class="japanese-name">フシギダネ</div>
+                                <div class="english-name">Bulbasaur</div>
+                            </div>
+                            <div class="card-description-container">
+                                <p class="card-description">
+                                    Bulbasaur is a Grass/Poison-type Pokémon. It has a bulb on its back that absorbs sunlight to grow.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="back-image" src="/images/card-back.jpg" alt="card 1 back">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="charmander-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img class="front-image" src="/images/card-charmander.png" alt="Charmander card">
+                            <div class="card-name-container">
+                                <div class="japanese-name">ヒトカゲ</div>
+                                <div class="english-name">Charmander</div>
+                            </div>
+                            <div class="card-description-container">
+                                <p class="card-description">
+                                    Charmander is a Fire-type Pokémon. The flame on its tail indicates its life force.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="back-image" src="/images/card-back.jpg" alt="card 2 back">
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="squirtle-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img class="front-image" src="/images/card-squirtle.png" alt="Squirtle card">
+                            <div class="card-name-container">
+                                <div class="japanese-name">ゼニガメ</div>
+                                <div class="english-name">Squirtle</div>
+                            </div>
+                            <div class="card-description-container">
+                                <p class="card-description">
+                                    Squirtle is a Water-type Pokémon. It is a turtle-like Pokémon that can shoot water from its mouth.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="back-image" src="/images/card-back.jpg" alt="card 3 back">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+        <!-- Right image panel -->
+        <div class="splash-panel">
+            <img class="splash-image" id="bulbasaur-splash" src="/images/splash-bulbasaur.png" alt="Bulbasaur">
+            <img class="splash-image" id="charmander-splash" src="/images/splash-charmander.png" alt="Charmander">
+            <img class="splash-image" id="squirtle-splash" src="/images/splash-squirtle.png" alt="Squirtle">
+        </div>
     </div>
-    
-    <!-- Right image panel -->
-    <div class="splash-panel">
-        <img class="splash-image" src="/images/splash-bulbasaur.png" alt="Bulbasaur">
-        <img class="splash-image" src="/images/splash-charmander.png" alt="Charmander">
-        <img class="splash-image" src="/images/splash-squirtle.png" alt="Squirtle">
-    </div>
-</div>
+
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
 
 </body>
 </html>
