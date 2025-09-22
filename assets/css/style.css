@@ -36,11 +36,16 @@ a {
 }
 
 h1 {
-    font-size: 30pt;
+    font-size: 40pt;
     padding: 0 !important;
     margin-top: 5pt !important;
 }
 
+h2 {
+    font-size: 30pt;
+    padding: 0 !important;
+    margin-top: 5pt !important;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Krona One", sans-serif;
@@ -48,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar {
     z-index: 2;
-    background: rgba(0, 19, 31, 0.3) !important;
+    background: rgba(0, 64, 104, 0.3) !important;
     padding: 1pt 30pt;
 }
 
@@ -71,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #section1 {
-    height: 100vh;   /* full screen intro */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #section2 {
-    background: url("../img/backgrounds/section2_bg.jpg");
+    background: url("../img/backgrounds/pokeball_bg.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -139,10 +144,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* carousel*/
 .carousel {
-    margin-top: 0;              /* remove the negative pull */
-    height: calc(100vh - 80px); /* full screen minus navbar height */
-    overflow: hidden;
+    margin-top: 0;
+    height: calc(100vh - 80px);
     position: relative;
+    overflow: hidden;
 }
 
 .carousel .list {
@@ -231,9 +236,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .arrows {
     position: absolute;
-    bottom: 80px;   /* raise them higher than 20px */
+    bottom: 80px;
     left: 50%;
-    transform: translateX(-50%); /* only horizontal centering */
+    transform: translateX(-50%);
     width: 1140px;
     max-width: 90%;
     display: flex;
