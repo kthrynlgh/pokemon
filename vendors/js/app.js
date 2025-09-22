@@ -33,3 +33,25 @@ const showSlider = (type) => {
         prevButton.style.pointerEvents = 'auto';
     }, 2000);
 }
+
+
+// Animate sections when entering viewport
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.style.opacity = "1";
+        entry.target.style.transform = "translateY(0)";
+        } else {
+        entry.target.style.opacity = "0";
+        entry.target.style.transform = "translateY(50px)";
+        }
+    });
+}, { threshold: 0.2 });
+
+sections.forEach(section => {
+    section.style.opacity = "0";
+    section.style.transform = "translateY(50px)";
+    observer.observe(section);
+});

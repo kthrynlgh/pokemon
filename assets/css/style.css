@@ -41,6 +41,18 @@ h1 {
     margin-top: 5pt !important;
 }
 
+h2 {
+    font-size: 30pt;
+    padding: 0 !important;
+    margin-top: 5pt !important;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 15pt;
+    padding: 0 !important;
+    margin-top: 5pt !important;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Krona One", sans-serif;
@@ -48,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar {
     z-index: 2;
-    background: rgba(0, 19, 31, 0.3) !important;
+    background: rgba(0, 49, 88, 0.658) !important;
     padding: 1pt 30pt;
 }
 
@@ -69,9 +81,32 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff !important;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
 
 #section1 {
-    height: 100vh;   /* full screen intro */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #section2 {
-    background: url("../img/backgrounds/section2_bg.jpg");
+    background: url("../img/backgrounds/bg3.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -122,6 +157,11 @@ h1, h2, h3, h4, h5, h6 {
 #intro-2 {
     border-top-right-radius: 50px;
     min-height: 75vh;
+    margin-top: 70px;
+}
+
+#intro-3 {
+    margin-top: 550px;
 }
 
 .rounded-custom {
@@ -133,16 +173,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-
-
-
-
 /* carousel*/
 .carousel {
-    margin-top: 0;              /* remove the negative pull */
-    height: calc(100vh - 80px); /* full screen minus navbar height */
-    overflow: hidden;
+    margin-top: 0;
+    height: calc(100vh - 80px);
     position: relative;
+    overflow: hidden;
 }
 
 .carousel .list {
@@ -231,9 +267,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .arrows {
     position: absolute;
-    bottom: 80px;   /* raise them higher than 20px */
+    bottom: 80px;
     left: 50%;
-    transform: translateX(-50%); /* only horizontal centering */
+    transform: translateX(-50%);
     width: 1140px;
     max-width: 90%;
     display: flex;
