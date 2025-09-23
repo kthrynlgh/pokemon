@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Generation 1</title>
+
+    <link href="vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logos/logo2.png" height="40px"  />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <form class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#intro">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html#generation1">GENERATION
+                        </a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pages-container">
+        <div class="main-content-area">
+            <h1 class="pokemon-title">Hoenn Region</h1>
+            <h2 class="generation-title">Generation 3</h2>
+
+            <p class="info-text">
+                The Hoenn region (ホウエン地方) is a tropical island filled with diverse biomes, including deserts, rainforests, and many islands. It has its own Pokémon League and is home to the legendary Pokémon Groudon and Kyogre, who are said to have formed the land and sea.
+            </p>
+
+            <div class="card-container">
+                <a class="card" id="treecko-card" href="treecko.html">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img class="front-image" src="/assets/img/cards/card-treecko.png" alt="Treecko card">
+                            <div class="card-content">
+                                <div class="card-name-container">
+                                    <div class="japanese-name">キモリ</div>
+                                    <div class="english-name">Treecko</div>
+                                </div>
+                                <div class="card-description-container">
+                                    <p class="card-description">
+                                        This small, agile Grass-type Pokémon is known for its ability to climb trees and its proud demeanor. It uses its quick speed and agility to battle its opponents.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="back-image" src="/assets/img/cards/card-back.jpg" alt="card 1 back">
+                        </div>
+                    </div>
+                </a>
+                <a class="card" id="torchic-card" href="torchic.html">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img class="front-image" src="/assets/img/cards/card-torchic.png" alt="Torchic card">
+                            <div class="card-content">
+                                <div class="card-name-container">
+                                    <div class="japanese-name">アチャモ</div>
+                                    <div class="english-name">Torchic</div>
+                                </div>
+                                <div class="card-description-container">
+                                    <p class="card-description">
+                                        A Fire-type Chick Pokémon, it has a flame sac in its belly that burns continuously. It feels as warm as a hot-water bottle and is known to be very affectionate with its trainer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="back-image" src="/assets/img/cards/card-back.jpg" alt="card 2 back">
+                        </div>
+                    </div>
+                </a>
+                <a class="card" id="mudkip-card" href="mudkip.html">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img class="front-image" src="/assets/img/cards/card-mudkip.png" alt="Mudkip card">
+                            <div class="card-content">
+                                <div class="card-name-container">
+                                    <div class="japanese-name">ミズゴロウ</div>
+                                    <div class="english-name">Mudkip</div>
+                                </div>
+                                <div class="card-description-container">
+                                    <p class="card-description">
+                                        This Water/Ground-type Pokémon is known for its powerful mud attacks. It's capable of moving on land more easily than Mudkip, and its strong legs allow it to dig through the mud at high speeds.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="back-image" src="/assets/img/cards/card-back.jpg" alt="card 3 back">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right image panel -->
+        <div class="splash-panel">
+            <img class="splash-image" id="treecko-splash" src="/assets/img/splash/splash-treecko.png" alt="Treecko">
+            <img class="splash-image" id="torchic-splash" src="/assets/img/splash/splash-torchic.png" alt="Torchic">
+            <img class="splash-image" id="mudkip-splash" src="/assets/img/splash/splash-mudkip.png" alt="Mudkip">
+        </div>
+    </div>
+
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+
+</body>
+</html>
